@@ -13,7 +13,7 @@
     <header id="cabecalho">
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <h1>Lojinha</h1>
+                <h1>Jornal</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,17 +23,17 @@
                             <a class="nav-link active" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#produtos">produtos</a>
+                            <a class="nav-link" href="#destaque">noticias</a>
                         </li>                       
                     </ul>
                 </nav>
             </div>
         </div>
-    </header>
+    </header>    
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
         <section id="inicio">
             <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" style="height: 50em;">
+                <div class="carousel-inner" style="height: 40em;">
                     <div data-bs-interval="3000" class="carousel-item active">
                         <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2017/09/01/21/53/sunglasses-2705642_1280.jpg" />
                     </div>
@@ -51,61 +51,66 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>                
             </div> 
-        </div>          
         </section>
-        <section class="conteudo">
-            <div class="Container">
-                <div class="row">
-                    <div class="col-sm-4 ">
-                        <div class="card text-bg-dark">
-                            <div class="card-header">
-                                Moda masculina
-                            </div>
-                            <img src="data:image/jpeg;base64,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"/>
-                            <div class="Card-body">
-                                <h4 class="card-title">o que esta em alta</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                </p>
-                                <a href="#" class="btn btn-primary">Leia mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card text-bg-dark">
-                            <div class="card-header">
-                                Moda infantil
-                            </div>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_963826-MLB50351580542_062022-O.webp"/>
-                            <div class="Card-body">
-                                <h4 class="card-title">Para ficar confortavel</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                </p>
-                                <a href="#" class="btn btn-primary">Leia mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card text-bg-dark">
-                            <div class="card-header">
-                                Moda femenina
-                            </div>
-                            <img src="https://6259028l.ha.azioncdn.net/img/2022/06/produto/6794/04f0002-27-camisa-feminina-em-viscose-hiatto-verde-musgo-1.png?ims=630x945"/>
-                            <div class="Card-body">
-                                <h4 class="card-title">Novas tendencias</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                </p>
-                                <a href="#" class="btn btn-primary">Leia mais</a>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+    <nav class="container">
+    <div class="conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em Destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320" />
+                        <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                    </a>                    
+                </article>
+            </section>
+            <section>
+                <h2>Ultimas noticias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320" />
+                            <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                        </a>                    
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320" />
+                            <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                        </a>                    
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320" />
+                            <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                        </a>                    
+                    </article>
                 </div>
-            </div>
-            </section>   
-        
-            
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>novidades</h2>
+                <div class="col-sm-8">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Moda femenina
+                        </div>
+                        <img src="https://6259028l.ha.azioncdn.net/img/2022/06/produto/6794/04f0002-27-camisa-feminina-em-viscose-hiatto-verde-musgo-1.png?ims=630x945"/>
+                        <div class="Card-body">
+                            <h4 class="card-title">Novas tendencias</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>            
+        </section>
+        </aside>        
+    </div> 
+</nav>          
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
